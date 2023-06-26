@@ -5,6 +5,7 @@ How do I play this Game?
 Button Pusher
 Victory Machine
 The Greatest Connect 4 Player Alive
+Connect 4 Pro
 Yi Sang
 Faust
 Don Quixote
@@ -17,3 +18,11 @@ Rodion
 Emil Sinclair
 Outis
 Gregor Samsa
+Charon
+Vergilius
+Dante
+Ayin
+Benjamin
+Carmen
+Angela
+Roland
