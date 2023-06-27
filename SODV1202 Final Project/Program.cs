@@ -5,8 +5,8 @@
 
         public static class ConnectFour
         {
-            // properties for player objects
-            private static List<Player> _PlayerList;
+            
+            private static List<Player> _PlayerList { get; set; }
             public static Connect4GameBoard GameBoard;
 
             public static void NewGame(List<Player> players) // game initialization for two players
@@ -338,23 +338,14 @@
 
         static void Main(string[] args)
         {
-            /*
-            ToDo:
-                
-            Bonus:
-            -configurable game options
-                -more than 2 players
-                -custom board size
-                -custom player tokens
-                -custom length of row required to win
-            -retain win statistics for each player
-            -new round vs newgame function?
-             */
 
             // begin a new game
             // for this sample it will only be for 2 players
 
             List<Player> players = new List<Player>();
+
+            Console.WriteLine("Enter player names (leave blank for a default name, type \'ai\' to create an AI player");
+
             for (int i = 0; i < 2; i++)
             {
                 Console.Write($"Player {i + 1} name: ");
@@ -378,6 +369,7 @@
 
             }
 
+            // start a new game with the players we just made and begin a round of Connect Four
             ConnectFour.NewGame(players);
             ConnectFour.Play();
 
